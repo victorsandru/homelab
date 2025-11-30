@@ -1,0 +1,12 @@
+# initalize rocky nodes
+- name: Initalize Rocky nodes
+  import_tasks: rocky.yaml
+  when: ansible_facts['os_family']|lower == 'rocky'
+
+# initalize rasp pi nodes (running Debian)
+- name: Initalize Raspberry Pi nodes
+  import_tasks: rasp_pi.yaml
+  when: ansible_facts['os_family']|lower == 'debian'
+
+# and so on...
+# start k3s initalization 

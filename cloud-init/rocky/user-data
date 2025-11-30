@@ -1,0 +1,4 @@
+#cloud-config
+hostname: cloud-rockstar-01
+runcmd:
+  - [ sh, -c, "echo 'Hello from the cloud-init Final Stage!' > /root/boot_done.txt" ]
