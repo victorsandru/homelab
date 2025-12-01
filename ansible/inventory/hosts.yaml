@@ -3,13 +3,13 @@ all:
   children:
     server:
       hosts:
-        10.0.0.2:
+        control-plane.rocky.k3s.local:
     agents:
       hosts:
-        10.0.0.3:
-        10.0.0.4:
-        10.0.0.5:
-        10.0.0.6:
+        node-0.rocky.k3s.local:
+        node-1.pi.k3s.local:
+        node-2.pi.k3s.engineer:
+        node-3.pi.k3s.engineer:
   vars:
     ansible_port: 22
     ansible_user: ansible
