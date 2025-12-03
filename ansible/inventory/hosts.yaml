@@ -3,7 +3,7 @@ all:
   children:
     server:
       hosts:
-        control-plane.rocky.k3s.local:
+        10.0.0.217:
     agents:
       hosts:
         node-0.rocky.k3s.local:
